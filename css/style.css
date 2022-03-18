@@ -15,10 +15,18 @@ body{
     content:none;
 }
 
-.arrow_.show i{
+.arrow_.show img{
     transform: rotate(180deg);
 }
 
-.fs_75{
-    font-size: 0.75rem;
+.bullet_ li a::before{
+    content:"\2022";
+    color:blue;
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.bg_none:hover{
+    background-color: transparent;
+    box-shadow: 1px 1px 4px 1px #888;
 }
