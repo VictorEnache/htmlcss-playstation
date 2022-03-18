@@ -1,3 +1,13 @@
+:root{
+    --primary_color_playstation: #fff;
+    --secondary_color_playstation: #2D64E6;
+    --evidence_color_playstation: #CD3D0F; 
+    --darkest_color_playstation: #000;
+    --dark_color_playstation: #1F1F1F;
+    --lightdark_color_playstation: #BEBCBB;
+}
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
@@ -21,7 +31,7 @@ body{
 
 .bullet_ li a::before{
     content:"\2022";
-    color:blue;
+    color: var(--secondary_color_playstation);
     display: inline-block;
     margin-right: 0.75rem;
 }
@@ -29,4 +39,49 @@ body{
 .bg_none:hover{
     background-color: transparent;
     box-shadow: 1px 1px 4px 1px #888;
+}
+
+
+.shadow_none:focus,
+.shadow_none:active:focus
+{
+    box-shadow: none;
+}
+
+/* buttons outline */
+.outline_red_btn{
+    background-color: var(--evidence_color_playstation);
+    outline-color: black;
+    outline-width: 2px;
+    outline-offset: -4px;
+}
+
+.outline_negative_white:hover{
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
+    outline-offset: -4px;
+    transition: all 0.15s;
+}
+/* ---------------------------- */
+
+.hero_img{
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 590px;
+}
+
+@media screen and (min-width:992px){
+    .hero_img{
+        height: initial;
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .hero_img img{
+        width: 400px;
+    }
 }
