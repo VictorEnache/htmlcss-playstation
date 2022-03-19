@@ -4,23 +4,47 @@
     --evidence_color_playstation: #CD3D0F; 
     --darkest_color_playstation: #000;
     --dark_color_playstation: #1F1F1F;
-    --lightdark_color_playstation: #BEBCBB;
+    --darklight_color_playstation: #BEBCBB;
 }
 
-
+/* #region general rules */
 body{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h6{
+    font-size: 13px;
+}
+
+p,
+.btn
+{
+    font-size: 14px;
 }
 
 .p_75{
     padding: 0.75rem;
 }
 
+.mt_750{
+ margin-top: 7.5rem;
+}
+
 .p_static{
  position: static !important;
 }
 
+.secondary_color{
+    color: var(--secondary_color_playstation);
+}
+/* #endregion general rules */
+
+/* #region rules for navbar */
 .arrow_::after{
     content:none;
 }
@@ -40,30 +64,7 @@ body{
     background-color: transparent;
     box-shadow: 1px 1px 4px 1px #888;
 }
-
-
-.shadow_none:focus,
-.shadow_none:active:focus
-{
-    box-shadow: none;
-}
-
-/* buttons outline */
-.outline_red_btn{
-    background-color: var(--evidence_color_playstation);
-    outline-color: black;
-    outline-width: 2px;
-    outline-offset: -4px;
-}
-
-.outline_negative_white:hover{
-    outline-style: solid;
-    outline-color: white;
-    outline-width: 2px;
-    outline-offset: -4px;
-    transition: all 0.15s;
-}
-/* ---------------------------- */
+/* #endregion rules for navbar */
 
 .hero_img{
     background-image: url(../img/jumbo-bg.png);
@@ -73,15 +74,98 @@ body{
     height: 590px;
 }
 
+/* #region playstation_5 section */
+#site_main>section>.container{
+    padding-top: 2rem;
+}
+
+.game_img img{
+    border-radius: 1.5rem;
+}
+/* #endregion playstation_5 section */
+
+/* #region Rules for btn */
+.shadow_none:focus,
+.shadow_none:active:focus
+{
+    box-shadow: none;
+}
+
+.outline_red_btn{
+    background-color: var(--evidence_color_playstation);
+    color: var(--primary_color_playstation);
+}
+
+.outline_red_btn:hover{
+    outline-style: solid;
+    outline-color: var(--darkest_color_playstation);
+    outline-width: 2px;
+    outline-offset: -4px;
+    transition: outline-offset 0.15s;
+    color: var(--primary_color_playstation);
+}
+
+.outline_dark_btn{
+    background-color: var(--dark_color_playstation);
+    color: var(--primary_color_playstation);
+}
+
+.outline_dark_btn:hover{
+    outline-style: solid;
+    outline-color: var(--primary_color_playstation);
+    outline-width: 2px;
+    outline-offset: -4px;
+    transition: outline-offset 0.15s;
+    color: var(--primary_color_playstation);
+}
+/* #endregion Rules for btn */
+
+@media screen and (min-width:576px){
+    h2{
+        font-size: 38px;
+    }
+}
+
 @media screen and (min-width:992px){
     .hero_img{
         height: initial;
         aspect-ratio: 2 / 1;
+    }
+
+    p,
+    .btn
+    {
+        font-size: 16px;
+    }
+
+    #site_main>.container{
+        padding-top: 2.75rem;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+
+    .hero_img img{
+        width: 220px;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
     .hero_img img{
         width: 400px;
+    }
+}
+
+/* prima di attivare quanto sotto chiedere ai tutor se l'immagine deve anche alzarsi oltre ad allargarsi */
+@media screen and (min-width:1200px){ 
+    .hero_img{
+        aspect-ratio: initial;
+        height: 600px;
+        background-position: top;
     }
 }
