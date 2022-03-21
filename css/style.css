@@ -130,6 +130,26 @@ p,
     border-radius: 1.5rem;
 }
 
+
+.op_img {
+    filter: opacity(50%);
+}
+
+.outline_active{
+    outline-style: solid;
+    outline-color: var(--secondary_color_playstation);
+    outline-width: 3px;
+    outline-offset: 3px;
+}
+
+.playstation_5 .game_img img:hover{
+    outline-style: solid;
+    outline-color: var(--secondary_color_playstation);
+    outline-width: 3px;
+    outline-offset: 3px;
+    position: relative;
+}
+
 .ps5_card{
  border-bottom: 2px solid var(--secondary_color_playstation);
 }
