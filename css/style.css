@@ -50,6 +50,10 @@ p,
     font-size: 14px;
 }
 
+.fs_13{
+    font-size: 13px;
+}
+
 .p_75{
     padding: 0.75rem;
 }
@@ -329,10 +333,6 @@ footer a{
 
     .ps_f_logo img{
         width: 130px;
-    }
-
-    footer a{
-        font-size: 16px;
     }
 
 }
