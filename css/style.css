@@ -155,8 +155,12 @@ p,
     filter: opacity(100%);
 }
 
+.hover_active{
+    border-bottom: 2px solid transparent;
+}
+
 .hover_active:hover{
-    border-bottom: 2px solid var(--secondary_color_playstation);
+    border-color: var(--secondary_color_playstation);
 }
 
 .outline_active{
