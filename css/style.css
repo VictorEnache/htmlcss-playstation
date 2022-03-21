@@ -134,6 +134,13 @@ p,
     border-radius: 1.5rem;
 }
 
+.playstation_5 .game_img:hover img{
+    outline-style: solid;
+    outline-color: var(--secondary_color_playstation);
+    outline-width: 3px;
+    outline-offset: 3px;
+}
+
 
 .op_img {
     filter: opacity(50%);
@@ -144,14 +151,6 @@ p,
     outline-color: var(--secondary_color_playstation);
     outline-width: 3px;
     outline-offset: 3px;
-}
-
-.playstation_5 .game_img img:hover{
-    outline-style: solid;
-    outline-color: var(--secondary_color_playstation);
-    outline-width: 3px;
-    outline-offset: 3px;
-    position: relative;
 }
 
 .ps5_card{
@@ -357,5 +356,18 @@ footer a{
         aspect-ratio: initial;
         height: 600px;
         background-position: top;
+    }
+
+    .playstation_5 .game_img img{
+        transition: margin 0.5s, outline-offset 0.15s ;
+    }
+    
+    .playstation_5 .game_img:hover img{
+        outline-style: solid;
+        outline-color: var(--secondary_color_playstation);
+        outline-width: 3px;
+        outline-offset: 3px;
+        margin-top: -25px;
+        transition: margin 0.5s, outline-offset 0.15s ;
     }
 }
