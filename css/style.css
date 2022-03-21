@@ -29,6 +29,14 @@ h6{
     font-size: 13px;
 }
 
+sup{
+    font-size: 10px;
+}
+
+.explore sup{
+    font-size: 16px;
+}
+
 p,
 .btn
 {
@@ -41,6 +49,10 @@ p,
 
 .mt_750{
  margin-top: 7.5rem;
+}
+
+.mt_400{
+    margin-top: 4rem;
 }
 
 .p_static{
@@ -209,10 +221,6 @@ p,
 
     h6{
         font-size: 14px;
-    }
-
-    sup{
-        font-size: 10px;
     }
 
     .hero_img img,
