@@ -17,6 +17,14 @@ h2{
     font-size: 32px;
 }
 
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 20px;
+}
+
 h6{
     font-size: 13px;
 }
@@ -45,6 +53,10 @@ p,
 
 .darklight_color{
     color:var(--darklight_color_playstation)
+}
+
+.bg_dark_color{
+    background-color: var(--dark_color_playstation);
 }
 /* #endregion general rules */
 
@@ -187,8 +199,20 @@ p,
         font-size: 40px;
     }
 
+    h3{
+        font-size: 28px;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
     h6{
         font-size: 14px;
+    }
+
+    sup{
+        font-size: 10px;
     }
 
     .hero_img img,
