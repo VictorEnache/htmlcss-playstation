@@ -85,6 +85,10 @@ p,
 .bg_now_color{
     background-color: var(--bg_now_section);
 }
+
+.bg_secondary_color{
+    background-color: var(--secondary_color_playstation);
+}
 /* #endregion general rules */
 
 /* #region rules for navbar */
@@ -137,6 +141,16 @@ p,
     background-repeat: no-repeat;
     background-position: center;
     height: 615px;
+}
+
+.ps_footer_logo img{
+    width: 120px;
+    height: 120px;
+}
+
+footer a{
+    line-height: 2.5rem;
+    font-size: 13px;
 }
 
 /* #region Rules for btn */
@@ -292,6 +306,15 @@ p,
     .social_container{
         width:600px;
     }
+
+    .ps_f_logo img{
+        width: 130px;
+    }
+
+    footer a{
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
