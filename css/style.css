@@ -6,6 +6,7 @@
     --dark_color_playstation: #1F1F1F;
     --darklight_color_playstation: #747170;
     --bg_plus_section:#BEBCBB;
+    --bg_now_section:#161C3B;
     --lightgrey_btn:#D9DADC;
 }
 
@@ -79,6 +80,10 @@ p,
 
 .bg_draklight_color{
     background-color: var(--bg_plus_section);
+}
+
+.bg_now_color{
+    background-color: var(--bg_now_section);
 }
 /* #endregion general rules */
 
@@ -196,6 +201,20 @@ p,
     transition: outline-offset 0.15s;
     color: var(--secondary_color_playstation);
 }
+
+.outline_primary_btn{
+    background-color: var(--primary_color_playstation);
+    color: var(--dark_color_playstation);
+}
+
+.outline_primary_btn:hover{
+    outline-style: solid;
+    outline-color: var(--primary_color_playstation);
+    outline-width: 2px;
+    outline-offset: 2px;
+    transition: outline-offset 0.15s;
+    color: var(--dark_color_playstation);
+}
 /* #endregion Rules for btn */
 
 @media screen and (min-width:576px){
@@ -209,14 +228,22 @@ p,
         width: 50%;
     }
 
-    .playstation_plus .i_plus{
+    .i_plus,
+    .i_now
+    {
         width: 250px;
+    }
+
+    .social_container{
+        width:550px;
     }
 }
 
 @media screen and (min-width:992px){
 
-    .playstation_plus .i_plus{
+    .i_plus,
+    .i_now
+    {
         width: 350px;
     }
 
@@ -260,6 +287,10 @@ p,
     .takes_two img
     {
         width: 220px;
+    }
+
+    .social_container{
+        width:600px;
     }
 }
 
