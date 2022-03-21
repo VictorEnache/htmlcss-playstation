@@ -4,7 +4,7 @@
     --evidence_color_playstation: #CD3D0F; 
     --darkest_color_playstation: #000;
     --dark_color_playstation: #1F1F1F;
-    --darklight_color_playstation: #BEBCBB;
+    --darklight_color_playstation: #747170;
 }
 
 /* #region general rules */
@@ -42,6 +42,10 @@ p,
 .secondary_color{
     color: var(--secondary_color_playstation);
 }
+
+.darklight_color{
+    color:var(--darklight_color_playstation)
+}
 /* #endregion general rules */
 
 /* #region rules for navbar */
@@ -75,14 +79,26 @@ p,
 }
 
 /* #region playstation_5 section */
-#site_main>section>.container{
+#site_main>.playstation_5>.container{
     padding-top: 2rem;
 }
 
 .game_img img{
     border-radius: 1.5rem;
 }
+
+.ps5_card{
+ border-bottom: 2px solid var(--secondary_color_playstation);
+}
 /* #endregion playstation_5 section */
+
+.takes_two{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 615px;
+}
 
 /* #region Rules for btn */
 .shadow_none:focus,
@@ -118,6 +134,20 @@ p,
     transition: outline-offset 0.15s;
     color: var(--primary_color_playstation);
 }
+
+.outline_secondary_btn{
+    background-color: var(--secondary_color_playstation);
+    color: var(--primary_color_playstation);
+}
+
+.outline_secondary_btn:hover{
+    outline-style: solid;
+    outline-color: var(--darkest_color_playstation);
+    outline-width: 2px;
+    outline-offset: 2px;
+    transition: outline-offset 0.15s;
+    color: var(--primary_color_playstation);
+}
 /* #endregion Rules for btn */
 
 @media screen and (min-width:576px){
@@ -126,8 +156,19 @@ p,
     }
 }
 
+@media screen and (min-width:768px){
+    .w_md_50{
+        width: 50%;
+    }
+}
+
 @media screen and (min-width:992px){
     .hero_img{
+        height: initial;
+        aspect-ratio: 2 / 1;
+    }
+
+    .takes_two{
         height: initial;
         aspect-ratio: 2 / 1;
     }
@@ -150,13 +191,17 @@ p,
         font-size: 14px;
     }
 
-    .hero_img img{
+    .hero_img img,
+    .takes_two img
+    {
         width: 220px;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
-    .hero_img img{
+    .hero_img img,
+    .takes_two img
+    {
         width: 400px;
     }
 }
@@ -164,6 +209,12 @@ p,
 /* prima di attivare quanto sotto chiedere ai tutor se l'immagine deve anche alzarsi oltre ad allargarsi */
 @media screen and (min-width:1200px){ 
     .hero_img{
+        aspect-ratio: initial;
+        height: 600px;
+        background-position: top;
+    }
+
+    .takes_two{
         aspect-ratio: initial;
         height: 600px;
         background-position: top;
