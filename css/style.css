@@ -1,6 +1,7 @@
 :root{
     --primary_color_playstation: #fff;
     --secondary_color_playstation: #2D64E6;
+    --secondary_color_dark_playstation:#00439C;
     --evidence_color_playstation: #CD3D0F; 
     --darkest_color_playstation: #000;
     --dark_color_playstation: #1F1F1F;
@@ -94,8 +95,8 @@ p,
     background-color: var(--bg_now_section);
 }
 
-.bg_secondary_color{
-    background-color: var(--secondary_color_playstation);
+.bg_secondary_dark_color{
+    background-color: var(--secondary_color_dark_playstation);
 }
 /* #endregion general rules */
 
