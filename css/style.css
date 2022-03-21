@@ -151,6 +151,14 @@ p,
     filter: opacity(50%);
 }
 
+.hover_active:hover .op_img{
+    filter: opacity(100%);
+}
+
+.hover_active:hover{
+    border-bottom: 2px solid var(--secondary_color_playstation);
+}
+
 .outline_active{
     outline-style: solid;
     outline-color: var(--secondary_color_playstation);
