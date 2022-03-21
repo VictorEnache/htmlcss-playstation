@@ -28,6 +28,10 @@ h3{
     font-size: 26px;
 }
 
+h5{
+    font-size: 18px;
+}
+
 h4{
     font-size: 20px;
 }
@@ -314,6 +318,10 @@ footer a{
 
     h4{
         font-size: 22px;
+    }
+
+    h5{
+        font-size: 20px;
     }
 
     h6{
